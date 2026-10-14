@@ -1,4 +1,6 @@
-#include <stdio.h>
+#pragma once
+
+#include "driver/gpio.h"
 #include "driver/ledc.h"
 #include "esp_err.h"
 
@@ -16,7 +18,7 @@ public:
         ESP_ERROR_CHECK(ledc_set_freq(mode_, timer_, freq_));
     }
 
-    void configureChannel(gpio_num_t gpio_num);
+    void configureChannel(gpio_num_t gpioNum);
 
 private:
     ledc_channel_t channel_;

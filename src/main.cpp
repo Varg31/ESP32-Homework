@@ -5,8 +5,8 @@
 
 // Uncomment the example you want to run (implementations live in src/examples/)
 extern "C" void app_main() {
-    // xTaskCreate(button_switch_task, "button_switch_task", 4096, nullptr, 5, nullptr);
-    xTaskCreate(photo_resistor_task, "photo_resistor_task", 4096, nullptr, 5, nullptr);
+    // xTaskCreate(buttonSwitchTask, "buttonSwitchTask", 4096, nullptr, 5, nullptr);
+    xTaskCreate(photoResistorTask, "photoResistorTask", 4096, nullptr, 5, nullptr);
     // xTaskCreate(servoRotateTask, "servoRotateTask", 4096, nullptr, 5, nullptr);
-    // xTaskCreate(pwm_blinkTask, "pwm_blinkTask", 4096, nullptr, 5, nullptr);
+    // xTaskCreate(pwmBlinkTask, "pwmBlinkTask", 4096, nullptr, 5, nullptr);
 }
